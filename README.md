@@ -9,19 +9,32 @@ A super fast AWS Lambda Function, written with Nim and compiled to a native bina
 
 1. Build
 
-```sh
-nimble install -y
-```
+    ```sh
+    nimble install -y
+    ```
 
 2. Package
 
-```sh
-nimble package
-```
+    ```sh
+    nimble package
+    ```
 
 3. Deploy
 
-Create an AWS Lambda Function with the "custom runtime" option and upload the `lambda.zip` file.
+    You have two options, automatic or manual.
+
+    **automatic**
+
+    Deploy with terraform by running the following commands.
+
+    ```sh
+    terraform init
+    terraform apply
+    ```
+
+    **manual**
+
+    Create an AWS Lambda Function with the "custom runtime" option and upload the `lambda.zip` file.
 
 ## Thanks
 
