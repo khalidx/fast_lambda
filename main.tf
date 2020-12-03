@@ -8,7 +8,7 @@ resource "aws_lambda_function" "fast_lambda" {
 }
 
 resource "aws_iam_role" "iam_for_lambda" {
-  name = "iam_for_lambda"
+  name = "fast_lambda_role"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
